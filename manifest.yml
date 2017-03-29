@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ObsiegerJavaCloudantWeb1
+  host: ObsiegerJavaCloudantWeb1
+  disk_quota: 1024M
+  services:
+  - ObsiegerJavaCloudantWeb1-cloudantNoSQLDB
+  - Monitoring and Analytics-3v
